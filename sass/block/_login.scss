@@ -1,0 +1,61 @@
+.main{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("../../assets/img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include dfc();
+    gap: 50px; 
+}
+.title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $bg-light;
+}
+.link{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 18px;
+    color: $bg-light;
+}
+.form{
+    width: 300px;
+    height: 350px;
+    background: $bg-light;
+    @include dfc(center, start);
+    padding: 40px 0;
+    gap: 20px;
+    border-radius: 15px;
+    p{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 18px;
+        color: $bg-dark;
+    }
+    .form__input-username, .form__input-password{
+        width: 90%;
+        background: $bg-navbar;
+    }
+    .btn{
+        width: 50%;
+    }
+    .form__input-username, .form__input-password, .btn{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 15px;
+    }
+}
+.card{
+    width: 200px;
+    height: 500px;
+    background: $bg-light;
+    @include dfc();
+    gap: 20px;
+}
+.Logout{
+    padding: 5px 20px;
+    border-radius: 15px;
+    background: $bg-navbar;
+}
